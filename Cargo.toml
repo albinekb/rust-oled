@@ -1,0 +1,16 @@
+[package]
+name = "oled-rust"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rppal = { version = "0.11.3", features = ["hal"] }
+#rppal = "0.11.3"
+#ssd1306 = "0.3.1"
+ssd1306 = { git = "https://github.com/jamwaffles/ssd1306" }
+#display-interface = "0.4.0"
+display-interface-spi = "0.4.0"
+embedded-graphics = "0.6.0"
